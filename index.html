@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png">
+    </header>
+    
+    <main>
+        <form class="seccion__formulario">
+            <textarea class="entrada__formulario" name="mensaje" id="" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn__contenedor">
+                <div class="alert_msj"><img src="./assets/Vector.png" alt="alert icon"><span>Solo letras minúsculas y sin acentos</span></div>
+            </div>
+            <div class="contenedor">
+                <input class="encriptar" type="submit" value="Encriptar">
+                <input class="desencriptar" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img src="./assets/Muñeco.png" alt="imagen munieco" class="img__resultado">
+            <div class="loader hidden"></div>
+            <div class="msj__contenedor">
+                <h3 class="titulo__resultado"> Ningún mensaje fue encontrado</h3>
+                <p class="texto__resultado"> Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="desencriptar botonCopiar hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
